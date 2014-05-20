@@ -2,15 +2,8 @@
 
 set -ex
 
-# Get a checkout of the trove-integration git repo
-# (or update it if already checked out)
-cd ~
-if [ -d ~/trove-integration ]; then
-  cd ~/trove-integration
-  git pull
-else 
-  git clone git://git.openstack.org/openstack/trove-integration.git
-fi
+# Copy the git submodule checkout over into home
+cp -r /vagrant/trove-integration ~
 
 cd ~/trove-integration/scripts
 # Disable Swift
