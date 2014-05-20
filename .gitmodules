@@ -1,0 +1,3 @@
+[submodule "trove-integration"]
+	path = trove-integration
+	url = git://git.openstack.org/openstack/trove-integration
