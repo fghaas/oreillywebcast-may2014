@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "Ubuntu Precise 64 Bit Cloud Image"
+  config.vm.box = "precise-server-cloudimg-amd64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -26,13 +26,19 @@ Vagrant.configure("2") do |config|
   # Set the hostname
   config.vm.hostname = "devstack"
 
-  # VirtualBox specific settings. No other providers are supported.
+  # VirtualBox specific settings.
   config.vm.provider :virtualbox do |vb|
     # Boot with a GUI so you can see the screen. (Default is headless)
     vb.gui = true
 
     # Set the amount of memory specified above
-    vb.customize ["modifyvm", :id, "--memory", ram]
+    vb.memory = ram
+  end
+
+  # Libvirt specific settings
+  config.vm.provider :libvirt do |domain|
+    domain.memory = ram
+    domain.nested = false
   end
 
   # Run the provisioning script
