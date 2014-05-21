@@ -67,9 +67,18 @@ instances, that list will be empty:
     +----+------+-----------+-------------------+--------+-----------+------+
     +----+------+-----------+-------------------+--------+-----------+------+
 
-When you're that far, you're ready for the tutorial.
+When you're that far, you're ready for experimenting with Trove.
+You can now create a database using the provided script:
 
-You can then save your machine state with
+    vagrant@devstack:~$ ./trove-create.sh
+
+This will take another 5-10 minutes and create a Trove instance for
+you.
+
+Creating databases, users, and configuration groups for your Trove
+instance is left as an exercise for the reader. Have fun!
+
+You can subsequently save your machine state with
 
     vagrant suspend
 
