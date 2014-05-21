@@ -93,5 +93,5 @@ And when needed, wake it up again with
 ## Questions?
 
 Feel free to
-[file an issue](./issues)
+[file an issue](https://github.com/fghaas/oreillywebcast-may2014/issues)
 in this repo if you need help.
