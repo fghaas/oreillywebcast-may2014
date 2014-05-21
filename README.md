@@ -1,7 +1,7 @@
 # Hands On Trove
 Database as a Service in OpenStack
 
-Tutorial at Percona Live MySQL Users Conference & Expo 2014
+O'Reilly Webcast, May 21, 2014
 
 Florian Haas, hastexo
 
@@ -22,7 +22,7 @@ For initially setting up the virtual machine, you'll also need
 
 Clone this repo:
 
-    git clone git://github.com/fghaas/perconalive2014
+    git clone git://github.com/fghaas/oreillywebcast-may2014
 
 Edit the `Vagrantfile` to increase the RAM allocation, if you can:
 
@@ -80,5 +80,5 @@ And when needed, wake it up again with
 ## Questions?
 
 Feel free to
-[file an issue](https://github.com/fghaas/perconalive2014/issues)
+[file an issue](./issues)
 in this repo if you need help.
