@@ -67,6 +67,8 @@ instances, that list will be empty:
     +----+------+-----------+-------------------+--------+-----------+------+
     +----+------+-----------+-------------------+--------+-----------+------+
 
+## Creating an instance
+
 When you're that far, you're ready for experimenting with Trove.
 You can now create a database using the provided script:
 
@@ -77,6 +79,8 @@ you.
 
 Creating databases, users, and configuration groups for your Trove
 instance is left as an exercise for the reader. Have fun!
+
+## Suspending and resuming the machine
 
 You can subsequently save your machine state with
 
