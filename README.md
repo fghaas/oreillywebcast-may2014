@@ -24,6 +24,11 @@ Clone this repo:
 
     git clone git://github.com/fghaas/oreillywebcast-may2014
 
+Update the [submodule](http://git-scm.com/book/en/Git-Tools-Submodules):
+
+    git submodule init
+	git submodule update
+
 Edit the `Vagrantfile` to increase the RAM allocation, if you can:
 
     # Set the amount of RAM you want to allocate to the VM. The default
