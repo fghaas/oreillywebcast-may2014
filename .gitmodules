@@ -1,5 +1,4 @@
 [submodule "trove-integration"]
 	path = trove-integration
-#	url = git://git.openstack.org/openstack/trove-integration
-	url = https://review.openstack.org/openstack/trove-integration
-	branch = changes/48/92848/4
+	url = git://github.com/openstack/trove-integration
+	branch = master
